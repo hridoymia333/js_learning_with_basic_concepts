@@ -45,3 +45,26 @@
         
 
 // Primitive types are immutable and compared by value.
+
+
+
+// Type Checking in JavaScript/
+// The `typeof` operator returns a string indicating the type of the operand.
+
+let str = "Hello";
+console.log(typeof str); // "string"
+
+let num = 42;
+console.log(typeof num); // "number"
+
+let flag = true;
+console.log(typeof flag); // "boolean"
+
+let bigIntVal = 1234567890123456789n;
+console.log(typeof bigIntVal); // "bigint"
+
+let sym = Symbol("id");
+console.log(typeof sym); // "symbol"
+
+let notDefined;
+console.log(typeof notDefined); // "undefined"
