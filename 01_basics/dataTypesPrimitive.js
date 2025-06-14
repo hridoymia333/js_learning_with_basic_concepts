@@ -68,3 +68,36 @@ console.log(typeof sym); // "symbol"
 
 let notDefined;
 console.log(typeof notDefined); // "undefined"
+
+
+// Type Conversion
+//  - Implicit Conversion: JavaScript automatically converts types when necessary, such as when using the `+` operator with a string and a number.
+//  - Explicit Conversion: You can manually convert types using functions like `String()`, `Number()`, and `Boolean()`.
+
+// 1. String to Number
+let strNum = "123";
+let num = Number(strNum); // Converts to number 123
+console.log(typeof num, num); // "number", 123
+
+// 2. Number to String
+let numVal = 456;
+let str = String(numVal); // Converts to string "456"
+console.log(typeof str, str); // "string", "456"
+
+// 3. Boolean to String
+let boolVal = true;
+let boolStr = String(boolVal); // "true"
+console.log(typeof boolStr, boolStr); // "string", "true"
+
+// 4. String to Boolean
+let strBool = "true";
+let boolFromStr = Boolean(strBool); // true (non-empty strings are truthy)
+console.log(typeof boolFromStr, boolFromStr); // "boolean", true
+
+// 5. Implicit Conversion
+let result = "10" + 5; // "105" (number 5 is converted to string)
+console.log(result); // "105"
+
+let diff = "10" - 5; // 5 (string "10" is converted to number)
+console.log(diff); // 5
+
